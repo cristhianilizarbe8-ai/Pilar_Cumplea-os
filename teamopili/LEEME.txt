@@ -1,0 +1,5 @@
+MÚSICA PROPIA (opcional):
+Copia tu canción en la carpeta "musica" con el nombre exacto: cancion.mp3
+Si existe, se reproducirá esa; si no, suena "Cumpleaños feliz" generado por el navegador.
+Para probar en local abre la carpeta con un servidor (p. ej. VS Code "Live Server"),
+o sube todo a Netlify/GitHub Pages.

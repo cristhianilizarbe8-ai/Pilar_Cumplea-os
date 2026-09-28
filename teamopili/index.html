@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Feliz Cumpleaños 🎂</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <!-- Pantalla de inicio: el toque del usuario permite reproducir la música -->
+  <div class="inicio" id="inicio">
+    <div class="inicio-contenido">
+      <div class="inicio-emoji"></div>
+      <h1>Tengo una sorpresa para ti Amor</h1>
+      <button id="btnComenzar" class="btn-comenzar">Toca para abrir </button>
+    </div>
+  </div>
+
+  <!-- Botón de música -->
+  <button id="btnMusica" class="btn-musica" aria-label="Activar o pausar música" title="Música">🔊</button>
+
+  <!-- Videos -->
+  <main class="collage" id="collage">
+    <video src="videos/Video1.mp4" muted playsinline loop preload="auto"></video>
+    <video src="videos/Video2.mp4" muted playsinline loop preload="auto"></video>
+    <video src="videos/Video3.mp4" muted playsinline loop preload="auto"></video>
+    <video src="videos/Video4.mp4" muted playsinline loop preload="auto"></video>
+    <video src="videos/Video5.mp4" muted playsinline loop preload="auto"></video>
+    <video src="videos/Video6.mp4" muted playsinline loop preload="auto"></video>
+    <video src="videos/Video7.mp4" muted playsinline loop preload="auto"></video>
+    <video src="videos/Video8.mp4" muted playsinline loop preload="auto"></video>
+    <video src="videos/Video5.mp4" muted playsinline loop preload="auto"></video>
+    <video src="videos/Video3.mp4" muted playsinline loop preload="auto"></video>
+  </main>
+
+  <!-- Primer mensaje -->
+  <section class="mensaje-final" id="mensajeFinal">
+    <div class="mensaje-contenido">
+      <h1>🎂🥳🍾🎊💕</h1>
+      <p>
+        <span class="saludo">Hola, mi amor.</span>
+        Si estás leyendo esto, es porque hoy es un día muy especial. Hoy pasó algo que lo cambió todo, y vengo a contarte qué fue lo que pasó...
+        <br><br>
+        Fue un <strong>28 de Setiembre</strong>. Ese día cambió el mundo... cambió la galaxia... cambió el universo...
+        <br><br>
+        Había nacido una personita. Una personita tan pequeña, tan frágil en este mundo de caos...
+        <br><br>
+        Nadie iba a pensar que al crecer se convertiría en una mujer tan grandiosa, tan maravillosa, tan inteligente, tan asombrosa, tan bonita, tan guapa, tan bella, tan perfecta y tan única... y te puedo asegurar que no hay nadie como ella en este mundo... nadie. Y estoy tan feliz de tenerla en mi vida. ♡
+        <br><br>
+        Amorcito, ya un año nuevo de vida... ¿será castigo o premio? jsjsjs
+        <br><br>
+        Espero que la pases muy bien hoy, amor. No sabes cómo me gustaría estar allá contigo y darte ese regalo... guiño* guiño*
+        <br><br>
+        Ay amor, te amo tanto :3
+        <br><br>
+        <em>Tú y yo contra el mundo<br>Tú mía, y yo tuyo.</em>
+        <br><br>
+        <span class="firma">De Cristhian, te amo ♡</span>
+        <br>
+        Y como dicen aquí...<br>
+        <strong>¡que los cumplas feliz!</strong> ♡♡♡
+      </p>
+      <button id="btnContinuar" class="btn-continuar">Continuar 🎂</button>
+    </div>
+  </section>
+
+  <!-- Mensaje final -->
+  <section class="mensaje-cumple" id="mensajeCumple">
+    <div class="mensaje-contenido-cumple">
+      <h1>Feliz cumpleaños<br>mi amor<br><small>te amo mucho</small><br><span class="emoji">🎂</span></h1>
+    </div>
+  </section>
+
+  <div id="confeti-container"></div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+  <script>
+    if (window.tsParticles) {
+      tsParticles.load("particles-js", {
+        particles: {
+          number: { value: 60 },
+          color: { value: "#ffd700" },
+          shape: { type: "circle" },
+          opacity: { value: 0.25 },
+          size: { value: 2 },
+          move: { enable: true, speed: 1 }
+        }
+      });
+    }
+  </script>
+</body>
+</html>
